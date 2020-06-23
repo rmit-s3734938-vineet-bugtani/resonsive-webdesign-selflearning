@@ -4,19 +4,43 @@
   <head>
     <title>Resto</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-
   <body>
-      <div class="wrapper">
-        <h1 class="logo">Resto</h1>
-        <div class="navbar">
-            <p><a href="">Our Story</a></p>
-            <p><a href="">Menu</a></p>
-            <p><a href="">Reservations</a></p>
-            <p><a href="">News</a></p>
-            <p><a href="">Reviews</a></p>
-        </div>
+    <div class="wrapper">
+      <h1 class="logo">Resto</h1>
+      <div class="navbar">
+        <p><a href="">Our Story</a></p>
+        <p><a href="">Menu</a></p>
+        <p><a href="">Reservations</a></p>
+        <p><a href="">News</a></p>
+        <p><a href="">Reviews</a></p>
       </div>
+      <div>
+        <button
+          type="button"
+          class="hamburger"
+          type="button"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars"> </i>
+        </button>
+      </div>
+      <div id="myLinks">
+        <a href="">Our Story</a>
+        <a href="">Menu</a>
+        <a href="">Reservations</a>
+        <a href="">News</a>
+        <a href="">Reviews</a>
+      </div>
+    </div>
 
     <!-- Start homepage content -->
 
@@ -168,5 +192,15 @@
         </div>
       </div>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -129,7 +129,7 @@ h1.logo {
 }
 
 .image-footer > a {
-  flex: 1;  
+  flex: 1;
   text-decoration: none;
 }
 
@@ -175,7 +175,7 @@ footer a {
   #home-menu li {
     width: 100%;
     margin: 0 auto;
-    margin-top : 20px;
+    margin-top: 20px;
   }
   #home-menu {
     width: 80vw;
@@ -186,10 +186,41 @@ footer a {
   }
 }
 
+#myLinks {
+  display: none;
+}
+
+.hamburger {
+  font-size: 20px;
+  padding: 12px;
+  display: none;
+  background-color: white;
+  border: 0px;
+}
+
+.wrapper > a {
+  color: white;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+#myLinks {
+  width: 100vw;
+}
+#myLinks a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+#myLinks a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 @media screen and (max-width: 600px) {
-  .navbar {
-    float: none;
-  }
   .navbar {
     float: none;
     display: flex;
@@ -200,5 +231,29 @@ footer a {
     float: none;
     margin: 0 auto;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    display: none;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h1.logo {
+    float: left;
+    margin-left: 10px;
+  }
+  .hamburger {
+    display: block;
+    outline: none;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  #myLinks a{
+    display: none;
   }
 }
